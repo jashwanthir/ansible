@@ -2,10 +2,10 @@
  host: web
  become: yes
  tasks:
-  -name: install nginx
+ -name: install nginx
    ansible.bulidin.package:
    state: present
-  -name: start the nginx
+ -name: start the nginx
     ansible.buildin.service:
     name: nginx
     state: started
