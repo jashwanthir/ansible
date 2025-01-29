@@ -1,6 +1,6 @@
 -name: install and run nginx
  host: web
- became: yes
+ become: yes
  tasks:
   -name: install nginx
    ansible.bulidin.package:
