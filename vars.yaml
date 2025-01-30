@@ -1,4 +1,4 @@
-- name: variables
+ - name: variables
   hosts: web
   connection: local
   vars:
@@ -9,4 +9,7 @@
   - name: print the variable
     ansible.builtin.debug:
     msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+ 
+
+
  
