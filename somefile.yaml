@@ -2,13 +2,13 @@
   hosts: web
   connection: local
   become: yes
-  tasks :
+  tasks:
   - name: install nginx
-    ansible.buildin.packages:
+    ansible.buildin.package:
       name: nginx
       state: present
   - name: start the nginx
-    ansible.buildin.services:
+    ansible.buildin.service:
       name: nginx
       state: started
       enabled: yes
