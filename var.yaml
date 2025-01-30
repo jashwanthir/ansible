@@ -1,5 +1,5 @@
 - name: variable
-  hosts: web
+  hosts: local
   connection: local
   vars:
     COURSE: "Devops with aws"
