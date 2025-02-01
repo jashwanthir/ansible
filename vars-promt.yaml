@@ -1,7 +1,7 @@
 - name: variables from files
   hosts: local
   connection: local
-  vars_promt:
+  vars_prompt:
    - name: COURSE
      promt: name of the course
      private: flase
