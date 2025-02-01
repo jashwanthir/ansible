@@ -11,7 +11,7 @@
   - name: TRAINER
     prompt: name of the trainer
     private: flase
-   tasks:
+  tasks:
   - name: enter the course information
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
