@@ -1,9 +1,9 @@
 - name: install packages
-  hosts: web
+  hosts: local
   become: yes
   tasks:
   - name: install packages
-    ansible.builtin.packages:
+    ansible.builtin.package:
       name: "{{ item }}"
       state: installed
     loop:
